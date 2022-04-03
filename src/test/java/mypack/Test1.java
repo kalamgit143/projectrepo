@@ -13,6 +13,8 @@ public class Test1
 		WebDriverManager.chromedriver().setup();
 		RemoteWebDriver driver=new ChromeDriver();
 		Thread.sleep(5000);
+		//Launch site
+		driver.get("https://www.google.com");
 		//Close site
 		driver.close();
 	}
