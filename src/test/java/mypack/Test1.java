@@ -9,9 +9,11 @@ public class Test1
 {
 	public static void main(String[] args) throws Exception
 	{
+		//Open browser
 		WebDriverManager.chromedriver().setup();
 		RemoteWebDriver driver=new ChromeDriver();
 		Thread.sleep(5000);
+		//Close site
 		driver.close();
 	}
 }
